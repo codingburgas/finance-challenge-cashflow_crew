@@ -1,6 +1,2 @@
-﻿  CashflowCrew.cpp
-  expenses.cpp
-  revenues.cpp
-  Generating Code...
-C:\Users\kaloy\Documents\finance-challenge-cashflow_crew\Code\CashflowCrew\CashflowCrew.cpp(54,1): warning C4715: 'signUp': not all control paths return a value
-  CashflowCrew.vcxproj -> C:\Users\kaloy\Documents\finance-challenge-cashflow_crew\Code\x64\Debug\CashflowCrew.exe
+﻿  expenses.cpp
+  CashflowCrew.vcxproj -> C:\Users\Daniel\Documents\finance-challenge-cashflow_crew\Code\x64\Debug\CashflowCrew.exe
