@@ -1,6 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <string>
+#include "revenues.h"
 
 void displayASCIIArt() {
     std::cout << R"(
@@ -52,7 +50,7 @@ bool signUp() {
     outFile.close();
 
     std::cout << "Sign-up successful!\n";
-    return true;
+    revenues();
 }
 
 bool login() {
@@ -71,6 +69,7 @@ bool login() {
         if (existingUsername == username && existingPassword == password) { // checks if data on file match
             std::cout << "Login successful!\n";
             inFile.close();
+            revenues();
             return 0;
         }
     }
