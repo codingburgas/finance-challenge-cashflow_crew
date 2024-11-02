@@ -1,11 +1,11 @@
-#include <cstdlib> // using library only for exit() function
+#include <cstdlib> // Using library only for exit() function
 #include "expenses.h"
 
 std::string categoriesRev[10];
 double userRevenue[10];
 int numRevCategories;
 void revenues() {
-    std::cout << "\033[2J\033[1;1H"; //clears the screen
+    std::cout << "\033[2J\033[1;1H"; // Clears the screen
 
     std::cout << R"(
 ---------------------------------------------------------------------------
@@ -22,7 +22,7 @@ void revenues() {
     )" << "\n";
 
 
-
+    // Input loop for entering the number of revenue categories
     do {
         std::cout << "Enter the number of revenue categories (max " << 10 << "): ";
         std::cin >> numRevCategories;
@@ -32,6 +32,7 @@ void revenues() {
         }
     } while (numRevCategories > 10);
 
+    // Input loop for entering category names and corresponding revenues
     for (int i = 0; i < numRevCategories; i++) {
         std::cout << "Enter the name of the category " << (i + 1) << ": ";
         std::cin >> categoriesRev[i];
@@ -39,6 +40,7 @@ void revenues() {
         std::cin >> userRevenue[i];
     }
 
+    // Display the entered monthly revenues
     std::cout << "\nYour monthly revenues:" << std::endl;
     for (int i = 0; i < numRevCategories; i++) {
         std::cout << categoriesRev[i] << ": $" << userRevenue[i] << std::endl;

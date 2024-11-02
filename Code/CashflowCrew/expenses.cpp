@@ -1,12 +1,13 @@
-#include <cstdlib> // using library only for exit() function
+#include <cstdlib> // Using library only for exit() function
 #include "expenses.h"
 
 std::string categoriesExp[10];
 double userExpense[10];
 int numExpCategories;
 
+// Function to handle the expense input and display
 void expenses() {
-    std::cout << "\033[2J\033[1;1H"; //clears the screen
+    std::cout << "\033[2J\033[1;1H"; // Clears the screen
 
     std::cout << R"(
 -------------------------------------------------------------------------------
@@ -42,6 +43,7 @@ void expenses() {
         std::cin >> userExpense[i];
     }
 
+    // Display the entered monthly expenses
     std::cout << "\nYour monthly expenses:" << std::endl;
     for (int i = 0; i < numExpCategories; i++) {
         std::cout << categoriesExp[i] << ": $" << userExpense[i] << std::endl;

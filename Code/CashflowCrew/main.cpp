@@ -35,11 +35,11 @@ bool signUp() {
 
 
     if (password != confirmPassword) {
-        std::cout << "Passwords do not match. Try again.\n"; // checks if passwords match
+        std::cout << "Passwords do not match. Try again.\n"; // Checks if passwords match
         return false;
     }
 
-    inFile.open("users.txt"); // checks if the username already exists
+    inFile.open("users.txt"); // Checks if the username already exists
     std::string existingUsername, existingEmail, existingPassword;
     while (inFile >> existingUsername >> existingEmail >> existingPassword) {
         if (existingUsername == username) {
@@ -50,7 +50,7 @@ bool signUp() {
     }
     inFile.close();
 
-    // saves new user details to file
+    // Saves new user details to file
     outFile.open("users.txt", std::ios::app);
     outFile << username << " " << email << " " << password << "\n";
     outFile.close();
@@ -59,16 +59,19 @@ bool signUp() {
     revenues();
 }
 
+// Function to handle user login
 bool login() {
     std::string username, password;
     std::ifstream inFile;
 
+    // Collect login details from user
     std::cout << "LOGIN\n";
     std::cout << "Username: ";
     std::cin >> username;
     std::cout << "Password: ";
     std::cin >> password;
 
+    // Open file to validate username and password
     inFile.open("users.txt");
     std::string existingUsername, existingEmail, existingPassword;
     while (inFile >> existingUsername >> existingEmail >> existingPassword) {
