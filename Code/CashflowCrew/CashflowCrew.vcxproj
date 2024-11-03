@@ -127,14 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Downloads\finance-challenge-cashflow_crew\Code\CashflowCrew\budget.cpp" />
+    <ClCompile Include="budget.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="expenses.cpp" />
+    <ClCompile Include="report.cpp" />
     <ClCompile Include="revenues.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="budget.h" />
     <ClInclude Include="expenses.h" />
+    <ClInclude Include="report.h" />
     <ClInclude Include="revenues.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

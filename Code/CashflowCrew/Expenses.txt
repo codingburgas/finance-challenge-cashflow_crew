@@ -1,1 +1,4 @@
-662
+3
+rent 700
+food 120
+travel 12

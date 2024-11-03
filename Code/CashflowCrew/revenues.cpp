@@ -36,14 +36,20 @@ void revenues() {
         }
     } while (numRevCategories > 10);
 
+    std::ofstream revDataFile;
+    revDataFile.open("Revenues.txt", std::ios::out);  // Open file in write mode
+    revDataFile << numRevCategories << "\n";
     // Input loop for entering category names and corresponding revenues
     for (int i = 0; i < numRevCategories; i++) {
         std::cout << "Enter the name of the category " << (i + 1) << ": ";
         std::cin >> categoriesRev[i];
+        revDataFile << categoriesRev[i] << " ";
         std::cout << "Enter the montly revenue for " << categoriesRev[i] << ": ";
         std::cin >> userRevenue[i];
+        revDataFile << userRevenue[i] << "\n";
         sumRevenue += userRevenue[i];
-    }
+    } 
+        revDataFile.close();  // Close the file after writing
 
     // Display the entered monthly revenues
     std::cout << "\nYour monthly revenues:" << std::endl;
@@ -51,7 +57,7 @@ void revenues() {
         std::cout << categoriesRev[i] << ": $" << userRevenue[i] << std::endl;
     }
 
-    outRevFile.open("Revenues.txt", std::ios::out);  // Open file in write mode
+    outRevFile.open("RevenuesNum.txt", std::ios::out);  // Open file in write mode
     outRevFile << sumRevenue << std::endl;
     outRevFile.close();  // Close the file after writing
 

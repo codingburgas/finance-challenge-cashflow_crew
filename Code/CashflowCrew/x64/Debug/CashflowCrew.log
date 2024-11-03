@@ -1,4 +1,4 @@
-﻿  expenses.cpp
-  revenues.cpp
+﻿  budget.cpp
+  report.cpp
   Generating Code...
   CashflowCrew.vcxproj -> C:\Users\kaloy\Documents\finance-challenge-cashflow_crew\Code\x64\Debug\CashflowCrew.exe

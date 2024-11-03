@@ -1,1 +1,3 @@
-1500
+2
+job 1000
+investments 3000

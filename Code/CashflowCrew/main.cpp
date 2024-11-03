@@ -1,4 +1,5 @@
 #include "revenues.h"
+#include "report.h"
 
 void displayASCIIArt() {
     std::cout << R"(

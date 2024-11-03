@@ -14,19 +14,19 @@ void expenses() {
     std::ifstream inExpFile;
 
     std::cout << R"(
--------------------------------------------------------------------------------
-  $$$$$$$$\                                                                    
-  $$  _____|                                                                   
-  $$ |     $$\   $$\ $$$$$$\  $$$$$$\ $$$$$$\$$$$\  $$$$$$$\ $$$$$$\  $$$$$$$\ 
-  $$$$$\   \$$\ $$  $$  __$$\$$  __$$\$$  _$$  _$$\$$  _____$$  __$$\$$  _____|
-  $$  __|   \$$$$  /$$ /  $$ $$$$$$$$ $$ / $$ / $$ \$$$$$$\ $$$$$$$$ \$$$$$$\  
-  $$ |      $$  $$< $$ |  $$ $$   ____$$ | $$ | $$ |\____$$\$$   ____|\____$$\ 
-  $$$$$$$$\$$  /\$$\$$$$$$$  \$$$$$$$\$$ | $$ | $$ $$$$$$$  \$$$$$$$\$$$$$$$  |
-  \________\__/  \__$$  ____/ \_______\__| \__| \__\_______/ \_______\_______/ 
-                    $$ |                                                       
-                    $$ |                                                       
-                    \__|  
--------------------------------------------------------------------------------                                                                                                      
+---------------------------------------------------------------------------------
+$$$$$$$$\                                                                       
+$$  _____|                                                                      
+$$ |      $$\   $$\  $$$$$$\   $$$$$$\  $$$$$$$\   $$$$$$$\  $$$$$$\   $$$$$$$\ 
+$$$$$\    \$$\ $$  |$$  __$$\ $$  __$$\ $$  __$$\ $$  _____|$$  __$$\ $$  _____|
+$$  __|    \$$$$  / $$ /  $$ |$$$$$$$$ |$$ |  $$ |\$$$$$$\  $$$$$$$$ |\$$$$$$\  
+$$ |       $$  $$<  $$ |  $$ |$$   ____|$$ |  $$ | \____$$\ $$   ____| \____$$\ 
+$$$$$$$$\ $$  /\$$\ $$$$$$$  |\$$$$$$$\ $$ |  $$ |$$$$$$$  |\$$$$$$$\ $$$$$$$  |
+\________|\__/  \__|$$  ____/  \_______|\__|  \__|\_______/  \_______|\_______/ 
+                    $$ |                                                        
+                    $$ |                                                        
+                    \__|                                                        
+---------------------------------------------------------------------------------                                                                                                     
     )" << "\n";
 
 
@@ -40,13 +40,19 @@ void expenses() {
         }
     } while (numExpCategories > 10);
 
+    std::ofstream expDataFile;
+    expDataFile.open("Expenses.txt", std::ios::out);  // Open file in write mode
+    expDataFile << numExpCategories << "\n";
     for (int i = 0; i < numExpCategories; i++) {
         std::cout << "Enter the name of the category " << (i + 1) << ": ";
         std::cin >> categoriesExp[i];
+        expDataFile << categoriesExp[i] << " ";
         std::cout << "Enter the montly revenue for " << categoriesExp[i] << ": ";
         std::cin >> userExpense[i];
+        expDataFile << userExpense[i] << "\n";
         sumExpenses += userExpense[i];
     }
+    expDataFile.close();  // Close the file after writing
 
     // Display the entered monthly expenses
     std::cout << "\nYour monthly expenses:" << std::endl;
@@ -55,7 +61,7 @@ void expenses() {
     }
     std::cout << "\n";
 
-    outExpFile.open("Expenses.txt", std::ios::out);  // Open file in write mode
+    outExpFile.open("ExpensesNum.txt", std::ios::out);  // Open file in write mode
         outExpFile  << sumExpenses << std::endl;
         outExpFile.close();  // Close the file after writing
     
