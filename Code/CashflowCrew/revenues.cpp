@@ -1,11 +1,15 @@
-#include <cstdlib> // Using library only for exit() function
 #include "expenses.h"
+#include "revenues.h"
 
 std::string categoriesRev[10];
 double userRevenue[10];
 int numRevCategories;
+double sumRevenue = 0;
 void revenues() {
     std::cout << "\033[2J\033[1;1H"; // Clears the screen
+
+    std::ofstream outRevFile;
+    std::ifstream inRevFile;
 
     std::cout << R"(
 ---------------------------------------------------------------------------
@@ -38,6 +42,7 @@ void revenues() {
         std::cin >> categoriesRev[i];
         std::cout << "Enter the montly revenue for " << categoriesRev[i] << ": ";
         std::cin >> userRevenue[i];
+        sumRevenue += userRevenue[i];
     }
 
     // Display the entered monthly revenues
@@ -45,6 +50,11 @@ void revenues() {
     for (int i = 0; i < numRevCategories; i++) {
         std::cout << categoriesRev[i] << ": $" << userRevenue[i] << std::endl;
     }
+
+    outRevFile.open("Revenues.txt", std::ios::out);  // Open file in write mode
+    outRevFile << sumRevenue << std::endl;
+    outRevFile.close();  // Close the file after writing
+
     std::cout << "\n";
     int choice;
     std::cout << "1.Continue\n2.Exit\n";

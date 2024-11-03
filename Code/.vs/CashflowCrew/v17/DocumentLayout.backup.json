@@ -3,8 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\CashflowCrew.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|solutionrelative:CashflowCrew\\CashflowCrew.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|solutionrelative:CashflowCrew\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\revenues.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|solutionrelative:CashflowCrew\\revenues.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\expenses.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|solutionrelative:CashflowCrew\\expenses.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|C:\\Users\\kaloy\\Downloads\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\budget.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\budget.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|solutionrelative:CashflowCrew\\budget.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\expenses.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|solutionrelative:CashflowCrew\\expenses.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\revenues.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04068C6E-C84E-48DC-9944-4248D68105B7}|CashflowCrew\\CashflowCrew.vcxproj|solutionrelative:CashflowCrew\\revenues.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,13 +45,91 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "budget.h",
+              "DocumentMoniker": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\budget.h",
+              "RelativeDocumentMoniker": "CashflowCrew\\budget.h",
+              "ToolTip": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\budget.h",
+              "RelativeToolTip": "CashflowCrew\\budget.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-03T18:38:21.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "expenses.h",
+              "DocumentMoniker": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\expenses.h",
+              "RelativeDocumentMoniker": "CashflowCrew\\expenses.h",
+              "ToolTip": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\expenses.h",
+              "RelativeToolTip": "CashflowCrew\\expenses.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-03T18:37:46.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "revenues.h",
+              "DocumentMoniker": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\revenues.h",
+              "RelativeDocumentMoniker": "CashflowCrew\\revenues.h",
+              "ToolTip": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\revenues.h",
+              "RelativeToolTip": "CashflowCrew\\revenues.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-03T18:31:29.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "budget.cpp",
+              "DocumentMoniker": "C:\\Users\\kaloy\\Downloads\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\budget.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\budget.cpp",
+              "ToolTip": "C:\\Users\\kaloy\\Downloads\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\budget.cpp",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\budget.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-02T22:03:50.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "expenses.cpp",
+              "DocumentMoniker": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\expenses.cpp",
+              "RelativeDocumentMoniker": "CashflowCrew\\expenses.cpp",
+              "ToolTip": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\expenses.cpp",
+              "RelativeToolTip": "CashflowCrew\\expenses.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-02T20:21:06.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "revenues.cpp",
+              "DocumentMoniker": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\revenues.cpp",
+              "RelativeDocumentMoniker": "CashflowCrew\\revenues.cpp",
+              "ToolTip": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\revenues.cpp",
+              "RelativeToolTip": "CashflowCrew\\revenues.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAD4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-02T20:20:59.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CashflowCrew.cpp",
-              "DocumentMoniker": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\CashflowCrew.cpp",
-              "RelativeDocumentMoniker": "CashflowCrew\\CashflowCrew.cpp",
-              "ToolTip": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\CashflowCrew.cpp",
-              "RelativeToolTip": "CashflowCrew\\CashflowCrew.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAD0AAAAZAAAAAAAAAA==",
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\main.cpp",
+              "RelativeDocumentMoniker": "CashflowCrew\\main.cpp",
+              "ToolTip": "C:\\Users\\kaloy\\Documents\\finance-challenge-cashflow_crew\\Code\\CashflowCrew\\main.cpp",
+              "RelativeToolTip": "CashflowCrew\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-02T20:11:20.81Z",
               "EditorCaption": ""

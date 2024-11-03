@@ -24,12 +24,18 @@
     <ClCompile Include="revenues.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\finance-challenge-cashflow_crew\Code\CashflowCrew\budget.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="expenses.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="revenues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="budget.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

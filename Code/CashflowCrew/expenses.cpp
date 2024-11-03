@@ -1,13 +1,17 @@
-#include <cstdlib> // Using library only for exit() function
+#include "budget.h"
 #include "expenses.h"
 
 std::string categoriesExp[10];
 double userExpense[10];
 int numExpCategories;
+double sumExpenses = 0;
 
 // Function to handle the expense input and display
 void expenses() {
     std::cout << "\033[2J\033[1;1H"; // Clears the screen
+
+    std::ofstream outExpFile;
+    std::ifstream inExpFile;
 
     std::cout << R"(
 -------------------------------------------------------------------------------
@@ -22,7 +26,7 @@ void expenses() {
                     $$ |                                                       
                     $$ |                                                       
                     \__|  
--------------------------------------------------------------------------------                                                                                                  
+-------------------------------------------------------------------------------                                                                                                      
     )" << "\n";
 
 
@@ -41,6 +45,7 @@ void expenses() {
         std::cin >> categoriesExp[i];
         std::cout << "Enter the montly revenue for " << categoriesExp[i] << ": ";
         std::cin >> userExpense[i];
+        sumExpenses += userExpense[i];
     }
 
     // Display the entered monthly expenses
@@ -49,12 +54,17 @@ void expenses() {
         std::cout << categoriesExp[i] << ": $" << userExpense[i] << std::endl;
     }
     std::cout << "\n";
+
+    outExpFile.open("Expenses.txt", std::ios::out);  // Open file in write mode
+        outExpFile  << sumExpenses << std::endl;
+        outExpFile.close();  // Close the file after writing
+    
     int choice;
     std::cout << "1.Continue\n2.Exit\n";
     std::cout << "Enter choice:";
     std::cin >> choice;
     if (choice == 1) {
-        expenses();
+        budget();
     }
     else {
         std::cout << "Exiting...";
